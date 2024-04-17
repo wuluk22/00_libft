@@ -31,8 +31,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (i + ft_strlen(src));
 }
 
-/*
-int main(void)
+/*int main(void)
 {
     char s[] = "Hello";
     char d[11] = "julo";
@@ -45,5 +44,7 @@ int main(void)
 
     printf("%lu\n", strlcat(d1, s1, 8));
     printf("%s\n\n", d1);
+	ft_strlcat(0, 0, 5);
+	strlcat(0, "d", 0);
     return 0;
 }*/

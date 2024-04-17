@@ -56,14 +56,10 @@ char	*ft_itoa(int n)
 		n = -n;
 	}
 	str[count] = '\0';
-	if (n < 0)
-		count--;
-	count -= 1;
 	while (n != 0)
 	{
-		str[count] = (n % 10) + '0';
+		str[--count] = (n % 10) + '0';
 		n = n / 10;
-		count--;
 	}
 	return (str);
 }
